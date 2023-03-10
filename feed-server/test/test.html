@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<div>
+    <input id="file" type="file"/>
+</div>
+<div>
+    <button id="btn" onclick="mclick()">click</button>
+</div>
+</body>
+<script>
+    function mclick() {
+        console.log('test')
+        const file = document.getElementById('file')
+        console.log(file.files[0])
+        fetch('http://feed-fadinglight.oss-cn-hangzhou.aliyuncs.com/imgs/2.jpg?OSSAccessKeyId=LTAI5tLHrrVfeCY56M7Me8zm&Expires=1659591058&Signature=zYtatQJvJlT39ZsH%2BW51kuNR2rA%3D', {
+            method: 'PUT',
+            body: file.files[0],
+        })
+    }
+</script>
+</html>

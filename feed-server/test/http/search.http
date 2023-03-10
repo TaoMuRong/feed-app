@@ -1,0 +1,5 @@
+### search post pass
+GET http://localhost:8080/api/search/post?words=车厘子
+
+### search user pass
+GET  http://localhost:8080/api/search/user?words=车厘子

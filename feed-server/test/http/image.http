@@ -1,0 +1,11 @@
+### 上传文件
+GET http://localhost:8080/api/img/download?imgUrl=ads123adszcjpg
+
+
+### 下载文件
+POST http://www.fadinglight.cn:8080/api/img/upload
+Content-Type: application/json
+
+{
+  "imgName": "test"
+}

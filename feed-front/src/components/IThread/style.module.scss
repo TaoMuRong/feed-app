@@ -1,0 +1,97 @@
+.PostsWrap {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  .avatar {
+    margin: 20px 0 0 25px;
+    display: flex;
+    .contentTitle {
+      margin: 10px 0 0 10px;
+      .nickName {
+        height: 19px;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 10px;
+        color: #000000;
+        margin-right: 3px;
+      }
+      .userName {
+        height: 17px;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: var(--color-text-5);
+      }
+    }
+  }
+  .contentBox {
+    margin: 10px 0 0 10px;
+    display: flex;
+    flex-direction: column;
+    .content {
+      margin-top: 8px;
+      display: flex;
+      flex-direction: column;
+      .word {
+        margin-left: 2px;
+        font-family: "Mulish";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        word-wrap: break-word;
+        word-break: normal;
+        color: var(--color-text-1);
+      }
+      .imgBox {
+        margin-top: 5px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill,172px);
+        width: 100%;
+        border-radius: 10px;
+        gap: 5px;
+        overflow: hidden;
+        justify-items: stretch;
+        .img {
+          object-fit: cover;
+          height: 110px;
+          width: 170px;
+        }
+      }
+      .imgSingle {
+        margin-top: 5px;
+        border-radius: 10px;
+        object-fit: cover;
+        max-height: 162px;
+        max-width: 100%;
+      }
+    }
+    .footer {
+      margin: 10px 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 3px 4px;
+      gap: 30px;
+      .footerItem {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 5px;
+        .detail {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 20px;
+          color: var(--color-text-4);
+        }
+      }
+    }
+  }
+}

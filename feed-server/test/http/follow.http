@@ -1,0 +1,36 @@
+
+
+### user login for test pass
+GET http://localhost:8080/api/user/test/login?account=@clz
+###
+GET http://localhost:8080/api/user/test/login?account=@taotao
+###
+GET http://localhost:8080/api/user/test/login?account=@laohe
+###
+GET http://localhost:8080/api/user/test/login?account=@111
+
+
+### follow taotao
+POST http://localhost:8080/api/user/follow
+Content-Type: application/json
+
+{
+  "followedId": "62f073704fa7e7caa43380e7"
+}
+
+### follow laohe
+POST http://localhost:8080/api/user/follow
+Content-Type: application/json
+
+{
+  "followedId": "62f06e07e9d2026515a2b072"
+}
+
+### follow clz
+POST http://localhost:8080/api/user/follow
+Content-Type: application/json
+
+{
+  "followedId": "62f21b8967516bf3c570ce93"
+}
+

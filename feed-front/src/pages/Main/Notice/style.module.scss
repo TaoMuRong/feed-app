@@ -1,0 +1,74 @@
+.userAvatar {
+  border-radius: 50%;
+}
+.tabBar {
+  position: sticky;
+  background-color: #fff;
+  top: 0px;
+  padding-top: 10px;
+  z-index: 10;
+}
+
+.noticeList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.container {
+  padding: 0px 15px;
+}
+
+.noticeWarp {
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  margin: 0 20px 0 10px;
+  padding: 8px 0;
+  border-bottom: 1px solid #ededed;
+  .avatar {
+    margin: 0 10px 0 0;
+  }
+  .noticeContent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+    .noticeTitle {
+      display: flex;
+      .nickName {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        color: #000000;
+        margin-right: 10px;
+      }
+      .userWhat {
+        flex: 1;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        font-family: 'DengXian';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+        color: var(--color-text-1);
+      }
+    }
+    .time {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 25px;
+      color: var(--color-text-3);
+    }
+  }
+  .point {
+    align-self: center;
+  }
+}

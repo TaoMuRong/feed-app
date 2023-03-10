@@ -1,0 +1,23 @@
+### add post pass
+POST http://localhost:8080/api/post/add
+Content-Type: application/json
+
+{
+  "type": 1,
+  "relativeId": "",
+  "content": "这是车厘子的第一条博客",
+  "images": []
+}
+
+
+### list post through userId of token pass
+GET http://localhost:8080/api/post/list
+
+
+### like pass
+POST http://localhost:8080/api/post/like
+Content-Type: application/json
+
+{
+  "postId": "62ecc817d8ca8063187fa1e3"
+}

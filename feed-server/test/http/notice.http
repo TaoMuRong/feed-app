@@ -1,0 +1,10 @@
+POST http://localhost:8080/api/notice/test/add
+Content-Type: application/json
+
+{
+  "userId": "test",
+  "content": "test",
+  "createdAt": 1660036271316,
+  "fromId": "62f21b8967516bf3c570ce93",
+  "readed": false
+}

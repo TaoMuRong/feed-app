@@ -1,0 +1,20 @@
+WEBSOCKET ws://localhost:8080/ws/conn/62f21b8967516bf3c570ce93
+Content-Type: application/json // used only for IDE highlighting.
+// Highlighting is applied for each message independently.
+
+
+{
+  "message": "Send when the WebSocket connection is opened"
+}
+=== wait-for-server
+{
+  "type": 2,
+  "message": {
+    "content": "test",
+    "contentType": 1,
+    "toId": "62ec8d582df1671fed500827",
+    "fromId": "62f21b8967516bf3c570ce93"
+  }
+}
+
+###

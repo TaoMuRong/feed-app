@@ -1,0 +1,74 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px 20px 20px 20px;
+  height: calc(100vh - 20px);
+  .userInfo {
+    display: flex;
+    flex-direction: column;
+    .avatar {
+      margin-bottom: 10px;
+    }
+    .nickName {
+      font-family: 'Font Awesome 5 Free';
+      font-style: normal;
+      font-weight: 900;
+      font-size: 16px;
+      line-height: 18px;
+      color: #000000;
+      margin: 0 0 5px 5px;
+    }
+    .userName {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      color: var(--color-text-5);
+      margin: 0 0 15px 5px;
+    }
+    .focus {
+      margin-left: 5px;
+      display: flex;
+      font-family: 'DengXian';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 15px;
+      color: #000000;
+      .onFocus {
+        margin: 0 5px 30px 0;
+      }
+    }
+    .nav {
+      align-items: center;
+      border-radius: 3px;
+      color: #333;
+      display: flex;
+      cursor: pointer;
+      padding: 15px 5px;
+      text-decoration: none;
+      font-family: 'Font Awesome 5 Free';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      color: #333333;
+      .active {
+        background: #e8e8e8;
+        color: #788cde;
+      }
+      .Itab {
+        height: 18px;
+        margin-right: 10px;
+        width: 18px;
+      }
+    }
+  }
+  .logout {
+    position: absolute;
+    bottom: 60px;
+    width: calc(100% - 40px);
+  }
+}

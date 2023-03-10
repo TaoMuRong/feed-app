@@ -1,0 +1,63 @@
+.top {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  color: var(--color-text-3);
+  .input {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    padding: 4px;
+    border-radius: 20px;
+    background-color: var(--color-background);
+    color: var(--color-text-6);
+    font-size: 12px;
+    svg {
+      margin: 0 12px;
+    }
+    input {
+      flex: 1;
+      border: none;
+      outline: none;
+      background-color: var(--color-background);
+    }
+    input::placeholder {
+      color: var(--color-text-6);
+    }
+  }
+  .cancel {
+    margin-left: 10px;
+  }
+  .back {
+    margin: 0 10px;
+    font-size: 16px;
+  }
+}
+
+.container {
+  padding: 10px 15px;
+}
+
+.recentSearch {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: black;
+  font-size: 16px;
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+  }
+}
+
+.bolder {
+  font-weight: 700;
+}
+
+.tabBar {
+  position: sticky;
+  background-color: #fff;
+  top: -1px;
+}

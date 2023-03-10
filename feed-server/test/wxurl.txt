@@ -1,0 +1,1 @@
+https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxd865f996ab9c8661&redirect_uri=http%3A%2F%2Fwww.fadinglight.cn%2Fapi%2Fuser%2Flogin&response_type=code&scope=snsapi_userinfo&state=123#wechat_redirect

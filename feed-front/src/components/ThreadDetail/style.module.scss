@@ -1,0 +1,58 @@
+.detailWarp {
+  display: flex;
+  flex-direction: column;
+  .timeBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 15px 12px;
+    gap: 10px;
+    .time {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 15px;
+      color: var(--color-text-3);
+    }
+  }
+  .count {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 22px;
+    gap: 10px;
+    border-width: 1px 0px;
+    border-style: solid;
+    border-color: #EDEDED;
+    .report {
+      padding-top: 2px;
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 17px;
+      color: #000000;
+    }
+    .like {
+      padding-top: 2px;
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 17px;
+      color: #000000;
+    }
+  }
+  .action {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 5px;
+    gap: 80px;
+    border-bottom: 1px solid #ededed;
+  }
+}

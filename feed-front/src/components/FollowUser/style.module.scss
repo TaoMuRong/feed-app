@@ -1,0 +1,77 @@
+.userWarp {
+  display: flex;
+  padding: 15px;
+  .avatar {
+    margin-right: 10px;
+  }
+  .userInfo {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+    .userTitle {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      .nickName {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        color: #000000;
+      }
+      .userName {
+        margin-top: 5px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: var(--color-text-5);
+      }
+      .NofocusButton {
+        background: #000000;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;  
+        align-items: center;
+        padding: 8px 25px;
+        font-family: 'DengXian';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 13px;
+        color: #FFFFFF;
+      }
+      .focusButton {
+        background: #FFFFFF;
+        border: 1px solid #CCCCCC;
+        border-radius: 13px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;  
+        align-items: center;
+        padding: 7px 25px;
+        font-family: 'DengXian';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 13px;
+        color: #000000;
+      }
+    }
+    .userIntroduction {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+      color: var(--color-text-1);
+    }
+  }
+}

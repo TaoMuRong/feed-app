@@ -1,0 +1,46 @@
+### wx login pass
+GET http://www.fadinglight.cn:8080/api/user/wxlogin
+
+### 注册 pass
+POST http://localhost:8080/api/user/register
+Content-Type: application/json
+
+{
+  "userInfo": {
+    "account": "@123456",
+    "nickname": "一颗车厘子",
+    "avatar": "https://thirdwx.qlogo.cn/mmopen/vi_32/DYAIOgq83eruDfcbWKH3JjRxeKFezv5bJS6K17XPeXQUcNdiaGZkXFZpsYqXlywVick7VHBdWWdbzs0mPhXzUqEg/132"
+  }
+}
+
+### test注册 pass
+POST http://localhost:8080/api/user/register
+Content-Type: application/json
+
+{
+  "userInfo": {
+    "account": "@123",
+    "nickname": "车厘子",
+    "avatar": "https://thirdwx.qlogo.cn/mmopen/vi_32/DYAIOgq83eruDfcbWKH3JjRxeKFezv5bJS6K17XPeXQUcNdiaGZkXFZpsYqXlywVick7VHBdWWdbzs0mPhXzUqEg/132"
+  }
+}
+
+
+### 获取用户信息，根据 token pass
+GET http://localhost:8080/api/user/info
+
+
+### user login for test pass
+GET http://localhost:8080/api/user/test/login?account=@clz
+
+
+### follow pass
+POST http://localhost:8080/api/user/follow
+Content-Type: application/json
+
+{
+  "followedId": "62ec7e4d8cb396afe8bbd64b"
+}
+
+### userInfo
+GET http://localhost:8080/api/user/info?userId=62ec9281be31c90dcf01658b

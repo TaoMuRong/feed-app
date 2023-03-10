@@ -1,0 +1,108 @@
+.chatContainer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+
+  .chatHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+
+    & div {
+      flex: 1 1;
+    }
+
+    .icon {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      cursor: pointer;
+    }
+
+    .text {
+      flex: 1 1;
+      text-align: center;
+    }
+  }
+
+  .chatBody {
+    flex: 1;
+    margin: 10px 0;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .chatFooter {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+
+    .iconImg {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      float: left;
+      cursor: pointer;
+    }
+
+    .input {
+      flex: 1 1;
+      margin: auto 10px;
+    }
+  }
+}
+
+.messageContainerLeft {
+  margin: 10px 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.messageContainerRight {
+  margin: 10px 10px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.message {
+  padding: 10px 12px;
+  max-width: 60vw;
+  border-radius: 20px;
+  word-break: break-word;
+}
+
+.messageMe {
+  background-color: #1677ff;
+  color: white;
+  border-bottom-right-radius: 0;
+}
+
+.messageYou {
+  background-color: #eaf4ff;
+  border-bottom-left-radius: 0;
+}
+
+.content {
+  font-size: 1rem;
+}
+.imgMessage {
+  // width: auto;
+  max-width: 100%;
+  max-height: 100px;
+}
+
+.date {
+  font-size: 0.5rem;
+}
+
+.fileInput {
+  display: none;
+}

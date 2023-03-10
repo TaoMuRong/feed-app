@@ -1,0 +1,59 @@
+version: '3.8'
+
+services:
+  app:
+    container_name: feed-app
+    image: node:18-alpine
+    restart: always
+    working_dir: /app/feed
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - ./app:/app/feed
+    ports:
+      - '8080:8080'
+    command: "npm start"
+
+  mongo:
+    container_name: feed-mongo
+    image: mongo:4.4.0
+    restart: always
+    ports:
+      - 27017:27017
+    volumes:
+      - ./mongo_data:/data/db
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: m4a1421
+
+  mongo-express:
+    container_name: feed-mongo-express
+    image: mongo-express
+    restart: always
+    ports:
+      - "8081:8081"
+    environment:
+      ME_CONFIG_MONGODB_ADMINUSERNAME: root
+      ME_CONFIG_MONGODB_ADMINPASSWORD: m4a1421
+      ME_CONFIG_MONGODB_URL: mongodb://root:m4a1421@mongo:27017/
+
+  redis:
+    container_name: redis
+    image: redis:alpine
+    restart: always
+    ports:
+      - '6379:6379'
+    command: [ '--requirepass redis' ]
+
+  proxy:
+    image: nginx:alpine
+    container_name: nginx
+    restart: always
+    volumes:
+      - ./nginx/templates:/etc/nginx/templates
+    privileged: true
+    ports:
+      - "80:80"
+    environment:
+      - NGINX_HOST=192.168.137.248
+      - NGINX_PORT=80

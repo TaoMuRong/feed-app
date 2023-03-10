@@ -1,0 +1,84 @@
+.userAvatar {
+  border-radius: 50%;
+}
+
+.tabBar {
+  position: sticky;
+  background-color: #fff;
+  top: 0px;
+  z-index: 10;
+  padding-top: 10px;
+}
+
+.container {
+  padding: 0px 15px;
+}
+
+.messageWarp {
+  display: flex;
+  margin-left: 10px;
+  .avatar {
+    margin: 0 10px 10px 0;
+  }
+  .messageContent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-right: 20px;
+    .messageTitle {
+      display: flex;
+      justify-content: space-between;
+      .nickName {
+        font-family: 'DengXian';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        color: #0f1828;
+      }
+      .sendTime {
+        font-family: 'DengXian';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        display: flex;
+        align-items: center;
+        text-align: right;
+        color: #000000;
+      }
+    }
+    .messageFooter {
+      margin-top: 5px;
+      display: flex;
+      justify-content: space-between;
+      overflow: hidden;
+      height: 20px;
+      .message {
+        font-family: 'Mulish';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        color: #adb5bd;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+}
+
+.redPoint {
+  background-color: red;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  color: white;
+  font-size: 0.5rem;
+  text-align: center;
+}

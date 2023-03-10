@@ -1,0 +1,12 @@
+### 0. 登录
+GET http://localhost:8080/api/user/test/login?account=@laohe
+
+### send a message
+POST http://localhost:8080/api/message/send
+Content-Type: application/json
+
+{
+  "content": "I Love You",
+  "contentType": 1,
+  "toId": "62f21b8967516bf3c570ce93"
+}
