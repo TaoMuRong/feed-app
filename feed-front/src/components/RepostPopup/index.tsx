@@ -8,6 +8,7 @@ import Posts from '../Posts'
 import { upload } from '../../api/oss'
 import axios from 'axios'
 import { IPost } from '../../libs/types'
+import { words } from '../../libs/words'
 interface IProps {
   post: IPost
   repostPopup: boolean
@@ -89,7 +90,12 @@ export default function RepostPopup({
         icon: 'fail',
         content: '内容不能为空哦',
       })
-    } else {
+    }else if(words.some(word => text.includes(word))) {
+      Toast.show({
+        icon: 'fail',
+        content: '请文明用语',
+      })
+    }  else {
       try {
         setVisible(true)
         let index = 0

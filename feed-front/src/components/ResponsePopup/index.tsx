@@ -10,6 +10,7 @@ import relativeTime from 'dayjs/plugin/relativeTime'
 import { ReactComponent as IconDelete } from '../../assets/imgs/deleteImg.svg'
 import { ReactComponent as IconPic } from '../../assets/imgs/pic.svg'
 import { IPost } from '../../libs/types'
+import { words } from '../../libs/words'
 
 interface IProps {
   post: IPost
@@ -87,7 +88,12 @@ export default function ResponsePopup({
         icon: 'fail',
         content: '内容不能为空哦',
       })
-    } else {
+    }else if(words.some(word => text.includes(word))) {
+      Toast.show({
+        icon: 'fail',
+        content: '请文明用语',
+      })
+    }  else {
       try {
         setVisible(true)
         let index = 0

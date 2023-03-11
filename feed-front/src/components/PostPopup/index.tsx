@@ -6,6 +6,7 @@ import { ReactComponent as IconDelete } from '../../assets/imgs/deleteImg.svg'
 import { ReactComponent as IconPic } from '../../assets/imgs/pic.svg'
 import { upload } from '../../api/oss'
 import axios from 'axios'
+import {words} from '../../libs/words'
 interface IProps {
   addPost: (content: string, images: string[]) => Promise<void>
 }
@@ -66,6 +67,11 @@ export default function PostPopup({ addPost }: IProps) {
       Toast.show({
         icon: 'fail',
         content: '内容不能为空哦',
+      })
+    }else if(words.some(word => text.includes(word))) {
+      Toast.show({
+        icon: 'fail',
+        content: '请文明用语',
       })
     } else {
       try {
